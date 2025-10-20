@@ -30,7 +30,7 @@ I've set up a complete TypeScript environment with everything I need:
 
 ## Project Structure
 
-Here's how I've organized everything:
+Here's how I plan to organize everything:
 
 ```
 learning-typescript/
