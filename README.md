@@ -75,6 +75,8 @@ cd learning-typescript
 pnpm install
 ```
 
+**Note**: This project includes `prompt-sync` for interactive console input in TypeScript learning exercises. This allows me to create interactive scripts that can accept user input while learning TypeScript fundamentals.
+
 ### Verify Everything Works
 
 Run the test suite to make sure it's all set up:
@@ -98,6 +100,10 @@ npx ts-node typescript-basics/01-basics/variables.ts
 
 # Example: Run a file from src
 npx ts-node src/datastructures/Stack.ts
+
+# Run interactive scripts (that use prompt-sync)
+npx ts-node typescript-basics/01-basics/variables.ts
+# These scripts can accept user input for interactive learning
 ```
 
 ### Testing
