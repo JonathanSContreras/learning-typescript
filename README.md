@@ -87,6 +87,19 @@ You should see 35 passing tests!
 
 ## Commands I Use Daily
 
+### Running TypeScript Files
+
+```bash
+# Run a single TypeScript file
+npx ts-node path/to/file.ts
+
+# Example: Run a file from typescript-basics
+npx ts-node typescript-basics/01-basics/variables.ts
+
+# Example: Run a file from src
+npx ts-node src/datastructures/Stack.ts
+```
+
 ### Testing
 
 ```bash
