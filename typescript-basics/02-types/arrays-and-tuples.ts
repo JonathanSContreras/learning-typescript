@@ -26,3 +26,11 @@ let mixed: (string | number)[] = ['text', 42, 'more text', 100];
 
 console.log(numbers[0]); // 1
 console.log(names.length); // 3
+
+for (let i = 0; i< names.length; i++) {
+  console.log(`Name at index ${i}: ${names[i]}`);
+}
+
+for (const flag of flags) {
+  console.log(`Flag value: ${flag}`);
+}
