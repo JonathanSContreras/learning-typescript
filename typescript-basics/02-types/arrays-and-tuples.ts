@@ -51,3 +51,31 @@ const longNames = names.filter((name) => name.length > 4); // string[]
 console.log('Doubled:', doubled);
 console.log('Evens:', evens);
 console.log('Sum:', sum);
+
+// ============================================
+// 3. TUPLES - Fixed Length, Specific Types
+// ============================================
+
+// Tuple: [string, number]
+let person: [string, number] = ['Alice', 30];
+
+// Accessing tuple elements
+let personName: string = person[0]; // 'Alice'
+let personAge: number = person[1]; // 30
+
+// Tuples with multiple types
+let response: [boolean, string, number] = [true, 'Success', 200];
+let [success, message, statusCode] = response; // Destructuring
+
+console.log(`Status: ${statusCode}, Message: ${message}`);
+
+// ============================================
+// 4. TUPLE WITH OPTIONAL ELEMENTS
+// ============================================
+
+type Point2D = [number, number];
+type Point3D = [number, number, number?]; // 3rd element is optional
+
+let point2D: Point2D = [10, 20];
+let point3D: Point3D = [10, 20, 30];
+let point3DNoZ: Point3D = [10, 20]; // OK, 3rd element is optional
