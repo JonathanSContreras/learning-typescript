@@ -34,3 +34,20 @@ for (let i = 0; i< names.length; i++) {
 for (const flag of flags) {
   console.log(`Flag value: ${flag}`);
 }
+
+// ============================================
+// 2. ARRAY METHODS WITH TYPES
+// ============================================
+
+// TypeScript knows the types through the operations
+const doubled = numbers.map((n) => n * 2); // number[]
+const evens = numbers.filter((n) => n % 2 === 0); // number[]
+const sum = numbers.reduce((acc, n) => acc + n, 0); // number
+
+// String array methods
+const uppercase = names.map((name) => name.toUpperCase()); // string[]
+const longNames = names.filter((name) => name.length > 4); // string[]
+
+console.log('Doubled:', doubled);
+console.log('Evens:', evens);
+console.log('Sum:', sum);
