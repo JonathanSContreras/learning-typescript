@@ -79,3 +79,15 @@ type Point3D = [number, number, number?]; // 3rd element is optional
 let point2D: Point2D = [10, 20];
 let point3D: Point3D = [10, 20, 30];
 let point3DNoZ: Point3D = [10, 20]; // OK, 3rd element is optional
+
+// ============================================
+// 5. READONLY ARRAYS
+// ============================================
+
+// ReadonlyArray prevents modification
+let immutableNumbers: ReadonlyArray<number> = [1, 2, 3, 4, 5];
+// immutableNumbers.push(6); // Error: Property 'push' does not exist
+
+// Readonly tuple
+let immutablePerson: readonly [string, number] = ['Bob', 25];
+// immutablePerson[0] = 'Alice'; // Error: Cannot assign to '0' because it is a read-only property
