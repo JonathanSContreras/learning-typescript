@@ -91,3 +91,23 @@ let immutableNumbers: ReadonlyArray<number> = [1, 2, 3, 4, 5];
 // Readonly tuple
 let immutablePerson: readonly [string, number] = ['Bob', 25];
 // immutablePerson[0] = 'Alice'; // Error: Cannot assign to '0' because it is a read-only property
+
+// ============================================
+// 6. MULTIDIMENSIONAL ARRAYS
+// ============================================
+
+// 2D array (matrix)
+let matrix: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+console.log(matrix[1][1]); // 5 (middle element)
+
+// Array of tuples
+let coordinates: [number, number][] = [
+  [0, 0],
+  [10, 20],
+  [30, 40],
+];
