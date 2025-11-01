@@ -111,3 +111,58 @@ let coordinates: [number, number][] = [
   [10, 20],
   [30, 40],
 ];
+
+// ============================================
+// PRACTICE EXERCISES
+// ============================================
+
+console.log("PRACTICE EXERCISES\n===================================\n");
+
+// TODO: Create an array of your top 5 favorite movies (strings)
+const favoriteMovies: string[] = ["Bee Movie", "Whiplash", "Interstellar", "The Dark Knight", "Little Rascals"];
+console.log("Favorite Movies:", favoriteMovies);
+
+// TODO: Create an array of ratings (numbers 1-10) for those movies
+const movieRatings: number[] = [7, 9, 10, 10, 6]
+console.log("Movie Ratings:", movieRatings);
+
+// TODO: Use map() to create a new array with all ratings doubled
+const doubleRatings = movieRatings.map(rating => rating * 2);
+console.log("Doubled Ratings:", doubleRatings);
+
+// TODO: Create a tuple representing a book: [title, author, year, pages]
+const book: [string, string, number, number] = ["Diary of a Wimpy Kid", "Jeff Kinney", 2007, 217];
+console.log("Book Tuple:", book);
+
+// TODO: Create an array of coordinates (tuples of [x, y])
+const coordinatesArray: [number, number][] = [
+  [0, 0],
+  [10, 20],
+  [20, 30]
+];
+console.log("Coordinate Array:", coordinatesArray);
+
+// TODO: Create a function that takes an array of numbers and returns the average
+function getAverage(nums: number[]): number {
+  let total = nums.reduce((acc, n) => acc + n, 0);
+  return total / nums.length;
+}
+console.log("Ratings Average:", getAverage(movieRatings));
+
+// ============================================
+// NOTES
+// ============================================
+
+/*
+Key Takeaways:
+1. Use Type[] or Array<Type> for arrays - both are equivalent
+2. Tuples are great for fixed-length data with specific types at each position
+3. Use readonly when you want to prevent array mutations
+4. Array methods (map, filter, reduce) maintain type safety
+5. Consider using tuples instead of objects for simple, ordered data
+
+When to use what:
+- Array: Variable-length collection of same type
+- Tuple: Fixed-length collection with specific types at each position
+- Object: Named properties with different types
+*/
