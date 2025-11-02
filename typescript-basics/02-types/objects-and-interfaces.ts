@@ -23,5 +23,5 @@ let user: { name: string; age: number; email: string } = {
 // Accessing properties
 console.log(user.name); // 'Jonathan'
 console.log(user.age); // 21
-user.name = 'John'; // chaing property value
+user.name = 'John'; // changing property value
 console.log(user.name); // 'John'
