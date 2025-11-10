@@ -48,3 +48,34 @@ let user2: User = {
   email: 'charlie@example.com',
 };
 
+// ============================================
+// 3. OPTIONAL PROPERTIES
+// ============================================
+
+// Optional properties use the ? symbol
+interface Product {
+  id: number;
+  name: string;
+  price: number;
+  description?: string; // Optional
+  category?: string; // Optional
+}
+
+let laptop: Product = {
+  id: 1,
+  name: 'MacBook Pro',
+  price: 1999,
+  description: 'Powerful laptop for developers',
+  // category is optional, so we can omit it
+};
+
+let mouse: Product = {
+  id: 2,
+  name: 'Wireless Mouse',
+  price: 29,
+  // Both description and category are omitted
+};
+
+// Accessing optional properties
+console.log(laptop.description); // 'Powerful laptop for developers'
+console.log(mouse.description); // undefined
