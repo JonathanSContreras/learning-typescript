@@ -79,3 +79,25 @@ let mouse: Product = {
 // Accessing optional properties
 console.log(laptop.description); // 'Powerful laptop for developers'
 console.log(mouse.description); // undefined
+
+// ============================================
+// 4. READONLY PROPERTIES
+// ============================================
+
+// Readonly properties cannot be changed after initialization
+interface Config {
+  readonly apiKey: string;
+  readonly baseUrl: string;
+  timeout: number; // Not readonly, can be changed
+}
+
+let appConfig: Config = {
+  apiKey: 'abc123xyz',
+  baseUrl: 'https://api.example.com',
+  timeout: 5000,
+};
+
+// appConfig.apiKey = 'newkey'; // Error: Cannot assign to 'apiKey' because it is a read-only property
+appConfig.timeout = 10000; // OK, timeout is not readonly
+
+console.log(appConfig.baseUrl); // 'https://api.example.com'
